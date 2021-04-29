@@ -6,9 +6,18 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div class="container">
+            <h1>Database claims</h1>
+            <div id="searchWrapper">
+                <input
+                    type="text"
+                    name="searchBar"
+                    id="searchBar"
+                    placeholder="search for a claim"
+                />
+            </div>
+            // Put in table here <ul id="list of claims"></ul>
+        </div>
         <a
           className="App-link"
           href="https://reactjs.org"

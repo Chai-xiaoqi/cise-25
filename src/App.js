@@ -25,6 +25,15 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          <div id = "searchbarbox">
+          <input type="text" id="searchbar" name="searchbar" placeholder="Search for claims here"></input>
+          <p></p>
+          <label>Filter options: </label>
+          <select name="claimFilter" id="claimFilter">
+          <option value="Date">Volvo</option>
+          <option value="Rated">Saab</option>
+          </select>
+          </div>
         </a>
       </header>
     </div>

@@ -16,7 +16,6 @@ function App() {
                     placeholder="search for a claim"
                 />
             </div>
-            // Put in table here <ul id="list of claims"></ul>
         </div>
         <a
           className="App-link"

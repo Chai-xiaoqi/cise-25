@@ -9,14 +9,14 @@ function App() {
         <div class="container">
             <h1>Database claims</h1>
             <div id="searchWrapper">
-                <input type="text" id="searchbar" name="searchbar" placeholder="Search for claims here"></input>
+                <input type="text" id="searchbar" name="searchbar" placeholder="Search for claims here"></input> </div>
           <p></p>
           <label>Filter options: </label>
           <select name="claimFilter" id="claimFilter">
           <option value="Date">Volvo</option>
           <option value="Rated">Saab</option>
     </select> 
-            </div>
+           
         </div>
         <a
           className="App-link"

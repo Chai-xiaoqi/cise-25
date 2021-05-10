@@ -1,0 +1,4 @@
+{
+  "mongoURI":
+    "mongodb+srv://Xiaoqi:Xiaoqi@cluster0.2jish.mongodb.net/mern_stack?retryWrites=true&w=majority"
+}

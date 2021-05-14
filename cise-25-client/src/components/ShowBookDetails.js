@@ -79,11 +79,16 @@ class showBookDetails extends Component {
           </tr>
           <tr>
             <th scope="row">6</th>
-            <td>Published Date</td>
-            <td>{ book.published_date }</td>
+            <td>Published Year</td>
+            <td>{ book.published_year}</td>
           </tr>
           <tr>
             <th scope="row">7</th>
+            <td>Published Month</td>
+            <td>{ book.published_month}</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
             <td>Content</td>
             <td>{ book.content}</td>
           </tr>

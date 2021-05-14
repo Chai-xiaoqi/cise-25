@@ -15,6 +15,8 @@ const BookCard = (props) => {
                 </h2>
                 <h3>{book.author}</h3>
                 <p>{book.SEpractice}</p>
+                <p>{book.claim}</p>
+                <p>{book.published_year}</p>
             </div>
         </div>
     )

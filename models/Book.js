@@ -1,13 +1,17 @@
 const mongoose = require('mongoose');
 
 const BookSchema = new mongoose.Schema({
+  
+  user: {
+    type: String,
+    required: true
+  },
   title: {
     type: String,
     required: true
   },
   author: {
-    type: String,
-    required: true
+    type: String
   },
   SEpractice: {
       type: String,
@@ -21,7 +25,38 @@ const BookSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  published_date: {
+  journal: {
+    type: String
+  },
+  volume: {
+    type: String
+  },
+  number: {
+    type: String
+  },
+  pages: {
+    type: String
+  },
+ eprint: {
+    type: String
+  },
+  peprinttype: {
+    type: String
+  },
+  eprintclass: {
+    type: String
+  },
+  annote: {
+    type: String
+  },
+  publisher: {
+    type: String
+  },
+  published_year: {
+    type: String,
+    required: true
+  },
+  published_month: {
     type: String
   },
   content:{

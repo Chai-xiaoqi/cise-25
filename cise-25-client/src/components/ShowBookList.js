@@ -28,14 +28,17 @@ class ShowBookList extends Component {
 
   render() {
     const books = this.state.books;
+    
     console.log("PrintBook: " + books);
     let bookList;
 
     if(!books) {
       bookList = "there is no book record!";
     } else {
-      bookList = books.map((book, k) =>
-        <BookCard book={book} key={k} />
+      bookList = books.map((book, k) => {
+        console.log(book);
+        return <BookCard book={book} key={k} />;
+      }
       );
     }
 
@@ -53,6 +56,10 @@ class ShowBookList extends Component {
                 + Add New Article 
               </Link>
               <br />
+              <Link to="/search-book" className="btn btn-outline-warning float-right">
+                + TABLE
+              </Link>
+              <br />
               <br />
               <hr />
             </div>
@@ -60,7 +67,23 @@ class ShowBookList extends Component {
           </div>
 
           <div className="list">
+            <table className="table table-striped" style={{ marginTop: 20 }}> 
+              <thead>
+          
+          <tr>
+            <th scope="col">TITLE</th>
+            <th scope="col">AUTHOR</th>
+            <th scope="col">SE PRACTICE</th>
+            <th scope="col">CLAIM</th>
+            <th scope="col">PUBLISHED YEAR</th>
+          </tr>
+          </thead>
+          <tbody>
+          
                 {bookList}
+            
+          </tbody>
+          </table>
           </div>
         </div>
       </div>

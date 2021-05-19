@@ -6,19 +6,19 @@ const BookCard = (props) => {
     const  book  = props.book;
 
     return(
-        <div className="card-container">
-             <div className="desc">
-                <h2>
-                    <Link to={`/show-book/${book._id}`}>
+        
+          
+          <tr>
+            <td><Link to={`/show-book/${book._id}`}>
                         { book.title }
-                    </Link>
-                </h2>
-                <h3>{book.author}</h3>
-                <p>{book.SEpractice}</p>
-                <p>{book.claim}</p>
-                <p>{book.published_year}</p>
-            </div>
-        </div>
+                    </Link></td>
+            <td>{ book.author }</td>
+            <td>{ book.SEpractice}</td>
+            <td>{ book.claim}</td>
+            <td>{ book.published_year }</td>
+          </tr>
+          
+     
     )
 };
 

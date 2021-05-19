@@ -25,8 +25,7 @@ class CreateBook extends Component {
       eprintclass: '',
       annote: '',
       published_year: '',
-      published_month: '',
-      content:''
+      published_month: ''
     };
   }
 
@@ -55,7 +54,6 @@ class CreateBook extends Component {
       annote: this.state.annote,
       published_year: this.state.published_year,
       published_month: this.state.published_month,
-      content:this.state.content
     };
 
     axios
@@ -78,8 +76,7 @@ class CreateBook extends Component {
           eprintclass: '',
           annote: '',
           published_year: '',
-          published_month: '',
-          content:''
+          published_month: ''
         })
         this.props.history.push('/');
       })
@@ -271,16 +268,7 @@ class CreateBook extends Component {
                     onChange={this.onChange}
                   />
                 </div>
-                <div className='form-group'>
-                  <input
-                    type='text'
-                    placeholder='content'
-                    name='content'
-                    className='form-control'
-                    value={this.state.content}
-                    onChange={this.onChange}
-                  />
-                </div>
+
 
                 <input
                     type="submit"

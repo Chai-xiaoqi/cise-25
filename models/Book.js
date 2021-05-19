@@ -54,13 +54,10 @@ const BookSchema = new mongoose.Schema({
   },
   published_year: {
     type: String,
-    required: true
+    
   },
   published_month: {
     type: String
-  },
-  content:{
-    type:String
   }
 });
 

@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import '../App.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import BookCard from './BookCard';
+import BookCardadmin from './BookCard_admin';
 
-class ShowBookList extends Component {
+class ShowBookList_admin extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -37,13 +37,13 @@ class ShowBookList extends Component {
     } else {
       bookList = books.map((book, k) => {
         console.log(book);
-        return <BookCard book={book} key={k} />;
+        return <BookCardadmin book={book} key={k} />;
       }
       );
     }
 
     return (
-      <div className="ShowBookList">
+      <div className="ShowBookList_admin">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -52,13 +52,9 @@ class ShowBookList extends Component {
             </div>
 
             <div className="col-md-11">
-              <Link to="/create-book" className="btn btn-outline-warning float-right">
-                + Submit Article 
-              </Link>
-              <br />
               
               <br />
-              <br />
+            
               <hr />
             </div>
 
@@ -74,7 +70,9 @@ class ShowBookList extends Component {
             <th scope="col">SE PRACTICE</th>
             <th scope="col">CLAIM</th>
             <th scope="col">PUBLISHED YEAR</th>
-          </tr>
+            <th scope="col">PUBLISHED MONTH</th>
+            <th scope="col">JOURNAL</th>
+                      </tr>
           </thead>
           <tbody>
           
@@ -89,4 +87,4 @@ class ShowBookList extends Component {
   }
 }
 
-export default ShowBookList;
+export default ShowBookList_admin;

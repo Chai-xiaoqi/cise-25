@@ -92,16 +92,13 @@ class CreateBook extends Component {
           <div className="row">
             <div className="col-md-8 m-auto">
               <br />
-              <Link to="/" className="btn btn-outline-warning float-left">
+              <Link to="/show-books" className="btn btn-outline-warning float-left">
                   Show Article List
               </Link>
             </div>
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Add Article</h1>
-              <p className="lead text-center">
-                  Create new article
-              </p>
-
+              <h1 className="display-4 text-center">Article Submission Form</h1>
+              
               <form noValidate onSubmit={this.onSubmit}>
               <div className='form-group'>
                   <input
@@ -136,6 +133,7 @@ class CreateBook extends Component {
                     onChange={this.onChange}
                   />
                 </div>
+                <br />
 
                 <div className='form-group'>
                   <input
@@ -147,6 +145,7 @@ class CreateBook extends Component {
                     onChange={this.onChange}
                   />
                 </div>
+                <br />
 
                 <div className='form-group'>
                   <input
@@ -158,6 +157,7 @@ class CreateBook extends Component {
                     onChange={this.onChange}
                   />
                 </div>
+                <br />
                 <div className='form-group'>
                   <input
                     type='text'
@@ -168,6 +168,8 @@ class CreateBook extends Component {
                     onChange={this.onChange}
                   />
                 </div>
+                <br />
+
                 <div className='form-group'>
                   <input
                     type='text'
@@ -178,6 +180,8 @@ class CreateBook extends Component {
                     onChange={this.onChange}
                   />
                 </div>
+                <br />
+
                 <div className='form-group'>
                   <input
                     type='text'
@@ -188,6 +192,8 @@ class CreateBook extends Component {
                     onChange={this.onChange}
                   />
                 </div>
+                <br />
+
                 <div className='form-group'>
                   <input
                     type='text'
@@ -198,6 +204,8 @@ class CreateBook extends Component {
                     onChange={this.onChange}
                   />
                 </div>
+                <br />
+
                 <div className='form-group'>
                   <input
                     type='text'
@@ -208,6 +216,8 @@ class CreateBook extends Component {
                     onChange={this.onChange}
                   />
                 </div>
+                <br />
+
                 <div className='form-group'>
                   <input
                     type='text'
@@ -218,6 +228,8 @@ class CreateBook extends Component {
                     onChange={this.onChange}
                   />
                 </div>
+                <br />
+
                 <div className='form-group'>
                   <input
                     type='text'
@@ -228,6 +240,8 @@ class CreateBook extends Component {
                     onChange={this.onChange}
                   />
                 </div>
+                <br />
+
                 <div className='form-group'>
                   <input
                     type='text'
@@ -238,6 +252,8 @@ class CreateBook extends Component {
                     onChange={this.onChange}
                   />
                 </div>
+                <br />
+
                 <div className='form-group'>
                   <input
                     type='text'
@@ -248,6 +264,8 @@ class CreateBook extends Component {
                     onChange={this.onChange}
                   />
                 </div>
+                <br />
+
                 <div className='form-group'>
                   <input
                     type='string'
@@ -258,6 +276,8 @@ class CreateBook extends Component {
                     onChange={this.onChange}
                   />
                 </div>
+                <br />
+
                 <div className='form-group'>
                   <input
                     type='string'
@@ -268,7 +288,8 @@ class CreateBook extends Component {
                     onChange={this.onChange}
                   />
                 </div>
-
+                <br />
+              
 
                 <input
                     type="submit"

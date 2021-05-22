@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import axios from 'axios';
 
-class showBookDetails extends Component {
+class showBookDetails_admin extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -87,18 +87,22 @@ class showBookDetails extends Component {
             <td>Published Month</td>
             <td>{ book.published_month}</td>
           </tr>
-          
+          <tr>
+            <th scope="row">8</th>
+            <td>Journal</td>
+            <td>{ book.published_month}</td>
+          </tr>
         </tbody>
       </table>
     </div>
 
     return (
-      <div className="ShowBookDetails">
+      <div className="ShowBookDetails_admin">
         <div className="container">
           <div className="row">
             <div className="col-md-10 m-auto">
               <br /> <br />
-              <Link to="/show-books" className="btn btn-outline-warning float-left">
+              <Link to="/show-books_admin" className="btn btn-outline-warning float-left">
                   Show Article List
               </Link>
             </div>
@@ -115,7 +119,19 @@ class showBookDetails extends Component {
             { BookItem }
           </div>
           <br />
+          <div className="row">
+            <div className="col-md-6">
+              <button type="button" className="btn btn-outline-danger btn-lg btn-block" onClick={this.onDeleteClick.bind(this,book._id)}>Delete Book</button><br />
+            </div>
 
+            <div className="col-md-6">
+              <Link to={`/edit-book/${book._id}`} className="btn btn-outline-info btn-lg btn-block">
+                    Edit Book
+              </Link>
+              <br />
+            </div>
+
+          </div>
 
             {/* <br />
             <button type="button" class="btn btn-outline-info btn-lg btn-block">Edit Book</button>
@@ -127,4 +143,4 @@ class showBookDetails extends Component {
   }
 }
 
-export default showBookDetails;
+export default showBookDetails_admin;

@@ -65,7 +65,9 @@ class ShowBookList extends Component {
           </div>
 
           <div className="list">
-            <table border="1" className="table table-striped" style={{ marginTop: 20 }}> 
+          <input type="text" id="myInput" placeholder="Search for names.." title="Type in a name"></input>
+
+            <table border="1" id="myTable" className="sortable" style={{ marginTop: 20 }}> 
               <thead>
           
           <tr>

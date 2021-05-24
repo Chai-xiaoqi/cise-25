@@ -15,7 +15,6 @@ class App extends Component {
     return (
       <Router>
         <div>
-
           <Route path='/show-books' component={ShowBookList} />
           <Route path='/show-books_admin' component={ShowBookList_admin} />
           <Route path='/create-book' component={CreateBook} />

@@ -34,11 +34,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # the detailed operaion of test, build and lint can be found in package.json
-        # run a single command:test
-     # - name: Run the tests
-      #  run: npm test
-        # run a single command:build
-         # run a single command: lint
-     # - name: Test lint
-#        run: npm run lint
+      - name: Build
+      run: npm run build

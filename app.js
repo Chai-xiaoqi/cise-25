@@ -22,6 +22,14 @@ app.get('/', (req, res) => res.send('Hello world!'));
 // use Routes
 app.use('/api/books', books);
 
-const port = process.env.PORT || 8082;
+if(process.env.NODE_ENV === "production") {
+    app.use(express.static(path.join(__dirname, "/search-app/build")));
 
-app.listen(port, () => console.log(`Server running on port ${port}`));
+    app.get("*", (req, res) => {
+        res.sendFile(path.join(__dirname,"search-app","build","index.html"));
+    });
+} else{
+    app.get("/", (req,res) =>{
+        res.send("api running");
+    });
+}

@@ -1,5 +1,5 @@
 // app.js
-
+const path = require('path'); 
 const express = require('express');
 const connectDB = require('./config/db');
 var cors = require('cors');

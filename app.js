@@ -25,14 +25,8 @@ const port = process.env.PORT || 8082;
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
 
-if(process.env.NODE_ENV === "production") {
-    app.use(express.static(path.join(__dirname, "/search-app/build")));
+app.use(express.static(path.join(__dirname, "/search-app/build")));
 
     app.get("*", (req, res) => {
         res.sendFile(path.join(__dirname,"search-app","build","index.html"));
     });
-} else{
-    app.get("/", (req,res) =>{
-        res.send("api running");
-    });
-}

@@ -6,6 +6,7 @@
   "engines": {
     "node": "14.x"},
   "scripts": {
+    "build": "webpack --config webpack.conf.js",
     "start": "node app.js",
     "app": "nodemon app.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix cise-25-client && npm run build --prefix cise-25-client",

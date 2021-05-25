@@ -39,8 +39,6 @@ jobs:
      # - name: Run the tests
       #  run: npm test
         # run a single command:build
-      - name: App
-        run: npm run app
          # run a single command: lint
      # - name: Test lint
 #        run: npm run lint

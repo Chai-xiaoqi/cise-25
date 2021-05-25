@@ -25,8 +25,8 @@ const port = process.env.PORT || 8082;
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
 
-app.use(express.static(path.join(__dirname, "/cise-25-client/public")));
+app.use("/public", express.static(path.resolve(__dirname, 'cise-25-client')));
 
-    app.get("*", (req, res) => {
-        res.sendFile(path.join(__dirname,"cise-25-client","public","index.html"));
-    });
+app.get("/",function (req, res) {
+  res.sendFile(__dirname + "/cise-25-client/public/index.html")
+});

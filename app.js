@@ -1,4 +1,5 @@
 // app.js
+require("dotenv").config({ path: "./config.env" });
 const path = require('path'); 
 const express = require('express');
 const connectDB = require('./config/db');
@@ -22,11 +23,17 @@ app.get('/', (req, res) => res.send('Hello world!'));
 // use Routes
 app.use('/api/books', books);
 
-app.use(express.static(path.join(__dirname, '/cise-25-client/build')));
+if(process.env.NODE_ENV === "production") {
+    app.use(express.static(path.join(__dirname, '/cise-25-client/build')));
 
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname,'cise-25-client','build','index.html'));
-})
+    app.get("*", (req, res) => {
+        res.sendFile(path.join(__dirname,'cise-25-client','build','index.html'));
+    });
+} else{
+    app.get("/", (req,res) =>{
+        res.send("api running");
+    });
+}
 
 const port = process.env.PORT || 8082;
 

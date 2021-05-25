@@ -23,11 +23,7 @@ app.get('/', (req, res) => res.send('Hello world!'));
 // use Routes
 app.use('/api/books', books);
 
-app.use(express.static(path.join(__dirname, '/cise-25-client/build')));
-
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname,'cise-25-client','build','index.html'));
-});
+app.use(express.static('cise-25-client/build'));
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
 

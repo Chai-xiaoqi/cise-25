@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node app.js",
     "app": "nodemon app.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix search-app && npm run build --prefix cise-25-client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix cise-25-client && npm run build --prefix cise-25-client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

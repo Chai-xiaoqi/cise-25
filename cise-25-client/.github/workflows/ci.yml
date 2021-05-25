@@ -44,5 +44,3 @@ jobs:
          # run a single command: lint
       - name: Test lint
         run: npm run lint
-      - name: Start
-        run: npm start

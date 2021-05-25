@@ -8,15 +8,15 @@ import ShowBookList_admin from './components/ShowBookList_admin';
 import ShowBookDetails from './components/ShowBookDetails';
 import ShowBookDetails_admin from './components/ShowBookDetails_admin';
 import UpdateBookInfo from './components/UpdateBookInfo';
+import SearchBookList from './components/SearchBookList';
 import SearchBook from './components/SearchBook';
-
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
 
-          <Route path='/show-books' component={ShowBookList} />
+          <Route path='/show-books' component={SearchBookList} />
           <Route path='/show-books_admin' component={ShowBookList_admin} />
           <Route path='/create-book' component={CreateBook} />
           <Route path='/edit-book/:id' component={UpdateBookInfo} />

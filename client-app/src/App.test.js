@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
 
-test('Ensures title component', () => {
+test('Ensures title component renders during Admin login', () => {
   <Router>
   <div>
   <Route path='/show-books_admin' component={ShowBookList} />
@@ -17,7 +17,7 @@ test('Ensures title component', () => {
  );
 });
 
-test('Ensures table component', () => {
+test('Ensures table component renders during Admin login', () => {
   <Router>
   <div>
   <Route path='/show-books_admin' component={ShowBookList} />

@@ -1,16 +1,16 @@
 /* base styling of index.html */
 html {
-  background-color: #202020;
+  background-color: #4473ca;
   text-align: center;
 }
 
 /* base styling of app */
 .home {
-  background-color: #202020;
+  background-color: #4473ca;
   color: white;
   height: 100%;
   width: 100%;
-  font-family: "Lucia Console", sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;;
 }
 
 /* container for main contents of page */
@@ -142,5 +142,5 @@ html {
 }
 
 table, th, td {
-  border: 1px solid black;
+  border: 1px solid rgb(245, 245, 245);
 }

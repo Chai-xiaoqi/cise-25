@@ -11,7 +11,10 @@
     "heroku-postbuild": "npm run install-client && npm run build",
     "start": "node app.js",
     "app": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"cd cise-25-client && npm run build",
+    "install_client": "cd cise-25-client && npm install",
+    "heroku_build": "npm run install_client && npm run build"
   },
   "repository": {
     "type": "git",

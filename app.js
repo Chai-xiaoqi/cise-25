@@ -7,6 +7,7 @@ const port = process.env.PORT || 8082;
 
 // routes
 const books = require('./routes/api/books');
+const { populate } = require('./models/Book');
 const app = express();
 
 // Connect Database
@@ -27,4 +28,7 @@ app.use(express.static(path.join(__dirname, '/cise-25-client')));
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
 
+if (process.env.NODE_ENV==='production'){
+    app.use(express.static('/cise-25-client/build'));
+}
 

@@ -87,7 +87,8 @@ class CreateBook extends Component {
 
   render() {
     return (
-      <div className="CreateBook">
+      <div className="textbox">
+        <div className="CreateBook">
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
@@ -299,6 +300,7 @@ class CreateBook extends Component {
           </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }

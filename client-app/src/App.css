@@ -33,89 +33,39 @@ html {
 
 /* central header */
 .header {
-  color: #5aa9bd;
+  color: #ffffff;
   font-size: 3em;
   font-weight: 300;
   text-align: center;
   margin-bottom: 0;
+  background-color: #fd9800;
+  border: 2px inset #b16b02;
+	border-radius: 10px;
+  width: 440px;
+	height: 70px;
+  margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	text-align: center;
 }
 
 /* subheader of central header */
 .subheader {
-  color: #c5dee4;
+  color: #ffffff;
   font-weight: 300;
   text-align: center;
-}
-
-/* footer */
-.footer {
-  color: #5aa9bd;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  margin-bottom: 10px;
-}
-
-/* text of footer */
-.footertext {
-  color: white;
-  margin-top: 5px;
-  margin-bottom: 0;
-}
-
-/* navigation bar - div format */
-.navbar {
-  position: fixed;
-  height: 10%;
-  width: 100%;
-}
-
-/* navigation list - ul format */
-.navlist {
-  list-style-type: none;
-  margin-left: 0;
-  margin-top: 0;
-  width: auto;
-  padding: 0;
-  overflow: hidden;
-}
-
-/* navigation list items - li a format */
-.navbtn a{
-  color: #5aa9bd;
-  border: 1px solid #5aa9bd;
-  border-radius: 40px;
-  display: block;
-  float: left;
-  padding: 15px 30px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 15px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-/* behaviour of navigation list items - darken */
-.navbtn a:hover {
-  background-color: #161616;
-}
-
-/* container for center buttons - div format */
-.buttons {
-  align-items: center;
-  display: flex;
-  margin-top: 25px;
-  justify-content: center;
+  font-size: 2em;
 }
 
 /* filled buttons */
 .btn {  
-  background-color:  #c5dee4;
-  color: black;
+  background-color: #fd9800;
+  border: 2px inset #b16b02;
+  color: #ffffff;
   border: none;
-  border-radius: 40px;
+  border-radius: 10px;
   padding: 15px 30px;
   text-align: center;
   text-decoration: none;
@@ -127,20 +77,24 @@ html {
 
 /* filled buttons behaviour - darken */
 .btn:hover {
-  background-color: #a8bfc5;
+  background-color: #cc7a00;
 }
 
 .textbox {
-  border: 1px solid #848484;
-	border-radius: 30px;
-	outline:0;
-	height:40px;
-  font-size: 16px;
-	width: 550px;
-	padding-left:10px;
-	padding-right:10px;
+  color: black;
+	border: 2px inset #031132;
+	border-radius: 10px;
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: #9fabc2;
 }
 
 table, th, td {
-  border: 1px solid rgb(245, 245, 245);
+  background-color: #9fabc2;
+  margin-left: auto;
+  margin-right: auto;
 }

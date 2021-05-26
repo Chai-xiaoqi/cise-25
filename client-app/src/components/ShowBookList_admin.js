@@ -46,7 +46,7 @@ class ShowBookList_admin extends Component {
       <div className="ShowBookList_admin">
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
+            <div className="subheader">
               <br />
               <h2 className="display-4 text-center">Articles List</h2>
             </div>

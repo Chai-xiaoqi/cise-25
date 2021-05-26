@@ -394,7 +394,7 @@ function SearchBookList() {
     <div className="SearchArticleList">
       <div className="container">
         <div className="row">
-          <div className="col-md-12">
+          <div className="subheader">
             <br />
             <h2 className="display-4 text-center">Search Articles</h2>
           </div>

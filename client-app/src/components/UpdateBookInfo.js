@@ -96,7 +96,8 @@ class UpdateBookInfo extends Component {
 
   render() {
     return (
-      <div className="UpdateBookInfo">
+      <div className = "textbox">
+        <div className="UpdateBookInfo">
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
@@ -311,6 +312,7 @@ class UpdateBookInfo extends Component {
           </div>
 
         </div>
+      </div>
       </div>
     );
   }
